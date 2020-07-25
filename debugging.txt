@@ -1,0 +1,1 @@
+docker run -it dannyhui/service-virtualization-nodejs sh
