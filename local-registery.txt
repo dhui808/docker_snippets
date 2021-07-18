@@ -20,3 +20,11 @@ Stop a local registry
   $ docker container stop registry
 To remove the registry container, use docker container rm
   $ docker container stop registry && docker container rm -v registry
+
+Examples:
+ocker run -d -p 5000:5000 --restart=always --name myregistry registry:2
+docker tag  dannyhui/springbootstarter:latest localhost:5000/springbootstarter
+docker push localhost:5000/springbootstarter
+docker image remove dannyhui/springbootstarter:latest
+docker image remove localhost:5000/springbootstarter
+docker pull localhost:5000/springbootstarter
