@@ -30,3 +30,6 @@ docker image remove localhost:5000/springbootstarter
 docker pull localhost:5000/springbootstarter
 
 https://developers.redhat.com/blog/2021/02/18/how-to-work-around-dockers-new-download-rate-limit-on-red-hat-openshift#docker_s_new_rate_limit
+$ oc create secret docker-registry docker --docker-server=docker.io --docker-username=<username> --docker-password=<password> --docker-email=<email>
+$ oc secrets link default docker --for=pull
+$ oc new-app <username>/<image> --source-secret=docker
