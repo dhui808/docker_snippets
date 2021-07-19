@@ -28,3 +28,5 @@ docker push localhost:5000/springbootstarter
 docker image remove dannyhui/springbootstarter:latest
 docker image remove localhost:5000/springbootstarter
 docker pull localhost:5000/springbootstarter
+
+https://developers.redhat.com/blog/2021/02/18/how-to-work-around-dockers-new-download-rate-limit-on-red-hat-openshift#docker_s_new_rate_limit
