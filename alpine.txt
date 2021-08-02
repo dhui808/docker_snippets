@@ -20,3 +20,7 @@ Install curl
 Install Docker
 
 git clone https://github.com/dhui808/openshift
+
+podman build -t nexus3 .
+cannot clone: Operation not permitted
+Error: cannot re-exec process
