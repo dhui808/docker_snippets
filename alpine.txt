@@ -1,0 +1,22 @@
+docker pull alpine
+docker run -it --rm alpine
+
+Copy Windows local file userreg.yaml to the /tmp folder in the Alpine container
+  docker ps
+  docker cp userreg.yaml 343558daad54:/tmp/
+
+Install Skope
+  apk add skopeo
+
+Install Podman
+  apk add podman
+
+Install Git
+  apk add git
+  
+Install curl
+  apk add curl
+
+Install Docker
+
+git clone https://github.com/dhui808/openshift
