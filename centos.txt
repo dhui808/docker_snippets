@@ -1,0 +1,21 @@
+docker pull centos
+docker run -it --rm centos
+
+Copy Windows local file userreg.yaml to the /tmp folder in the Alpine container
+  docker ps
+  docker cp userreg.yaml 50bc1849d5df:/tmp/
+
+Install Skope
+  dnf -y install skopeo
+
+Install Podman
+  yum -y install podman
+
+Install Git
+  yum -y install git
+  
+Install curl
+  yum -y install curl
+
+podman version
+Error: 'overlay' is not supported over overlayfs, a mount_program is required: backing file system is unsupported for this graph driver
