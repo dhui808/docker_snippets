@@ -1,1 +1,3 @@
 docker run -it dannyhui/service-virtualization-nodejs sh
+or if Docker contaimer is running, to get a bash shell in the container
+docker exec -it <container name> /bin/bash 
