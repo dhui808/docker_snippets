@@ -1,3 +1,6 @@
 docker run -it dannyhui/service-virtualization-nodejs sh
 or if Docker contaimer is running, to get a bash shell in the container
 docker exec -it <container name> /bin/bash 
+
+how-to-copy-files-from-host-to-docker-container
+docker cp foo.txt container_id:/foo.txt
