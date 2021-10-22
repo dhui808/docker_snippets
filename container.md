@@ -13,5 +13,5 @@
   docker logs <container_id>
 
 ## Remove a container
-  dcoker rm /redis
+  docker rm /redis
   
