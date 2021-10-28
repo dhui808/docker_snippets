@@ -1,6 +1,6 @@
 ## How to get into a Docker container's shell?
   docker ps  
-  docker exec -it <mycontainer> sh
+  docker exec -it !<mycontainer> /bin/bash
 
 ## List all containers
   docker container ls  
